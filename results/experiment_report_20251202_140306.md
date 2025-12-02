@@ -29,7 +29,10 @@
 - **Final D Loss:** 1.2151
 - **Final G Loss:** 0.6088
 - **Proxy FID Score:** 0.05
-- **Sample Images:** `results/gan_samples/MNIST_GAN_hinge_z64_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/MNIST_GAN_hinge_z64_epoch10.png" width="300">
 
 #### MNIST_GAN_hinge_z32
 - **Loss Type:** hinge
@@ -38,7 +41,10 @@
 - **Final D Loss:** 1.2959
 - **Final G Loss:** 0.5416
 - **Proxy FID Score:** 0.03
-- **Sample Images:** `results/gan_samples/MNIST_GAN_hinge_z32_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/MNIST_GAN_hinge_z32_epoch10.png" width="300">
 
 #### MNIST_GAN_hinge_z128
 - **Loss Type:** hinge
@@ -47,7 +53,10 @@
 - **Final D Loss:** 1.1298
 - **Final G Loss:** 0.6788
 - **Proxy FID Score:** 0.04
-- **Sample Images:** `results/gan_samples/MNIST_GAN_hinge_z128_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/MNIST_GAN_hinge_z128_epoch10.png" width="300">
 
 #### MNIST_GAN_bce_z64
 - **Loss Type:** bce
@@ -56,7 +65,10 @@
 - **Final D Loss:** 1.0181
 - **Final G Loss:** 1.2392
 - **Proxy FID Score:** 0.05
-- **Sample Images:** `results/gan_samples/MNIST_GAN_bce_z64_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/MNIST_GAN_bce_z64_epoch10.png" width="300">
 
 #### MNIST_GAN_bce_z32
 - **Loss Type:** bce
@@ -65,7 +77,10 @@
 - **Final D Loss:** 1.0849
 - **Final G Loss:** 1.1143
 - **Proxy FID Score:** 0.04
-- **Sample Images:** `results/gan_samples/MNIST_GAN_bce_z32_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/MNIST_GAN_bce_z32_epoch10.png" width="300">
 
 #### MNIST_GAN_bce_z128
 - **Loss Type:** bce
@@ -74,7 +89,10 @@
 - **Final D Loss:** 0.9333
 - **Final G Loss:** 1.4068
 - **Proxy FID Score:** 0.06
-- **Sample Images:** `results/gan_samples/MNIST_GAN_bce_z128_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/MNIST_GAN_bce_z128_epoch10.png" width="300">
 
 ## Part 1: GAN Experiments - FashionMNIST
 
@@ -92,7 +110,10 @@
 - **Final D Loss:** 1.3945
 - **Final G Loss:** 0.4709
 - **Proxy FID Score:** 0.06
-- **Sample Images:** `results/gan_samples/FashionMNIST_GAN_hinge_z64_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/FashionMNIST_GAN_hinge_z64_epoch10.png" width="300">
 
 #### FashionMNIST_GAN_hinge_z32
 - **Loss Type:** hinge
@@ -101,7 +122,10 @@
 - **Final D Loss:** 1.4563
 - **Final G Loss:** 0.4275
 - **Proxy FID Score:** 0.07
-- **Sample Images:** `results/gan_samples/FashionMNIST_GAN_hinge_z32_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/FashionMNIST_GAN_hinge_z32_epoch10.png" width="300">
 
 #### FashionMNIST_GAN_hinge_z128
 - **Loss Type:** hinge
@@ -110,7 +134,10 @@
 - **Final D Loss:** 1.3273
 - **Final G Loss:** 0.5369
 - **Proxy FID Score:** 0.06
-- **Sample Images:** `results/gan_samples/FashionMNIST_GAN_hinge_z128_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/FashionMNIST_GAN_hinge_z128_epoch10.png" width="300">
 
 #### FashionMNIST_GAN_bce_z64
 - **Loss Type:** bce
@@ -119,7 +146,10 @@
 - **Final D Loss:** 1.1371
 - **Final G Loss:** 1.0390
 - **Proxy FID Score:** 0.08
-- **Sample Images:** `results/gan_samples/FashionMNIST_GAN_bce_z64_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/FashionMNIST_GAN_bce_z64_epoch10.png" width="300">
 
 #### FashionMNIST_GAN_bce_z32
 - **Loss Type:** bce
@@ -128,7 +158,10 @@
 - **Final D Loss:** 1.1543
 - **Final G Loss:** 1.0175
 - **Proxy FID Score:** 0.09
-- **Sample Images:** `results/gan_samples/FashionMNIST_GAN_bce_z32_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/FashionMNIST_GAN_bce_z32_epoch10.png" width="300">
 
 #### FashionMNIST_GAN_bce_z128
 - **Loss Type:** bce
@@ -137,7 +170,10 @@
 - **Final D Loss:** 1.0529
 - **Final G Loss:** 1.1701
 - **Proxy FID Score:** 0.08
-- **Sample Images:** `results/gan_samples/FashionMNIST_GAN_bce_z128_epoch*.png`
+
+**Sample Images (Epoch 10):**
+
+<img src="gan_samples/FashionMNIST_GAN_bce_z128_epoch10.png" width="300">
 
 ## Part 2: VAE Experiments - MNIST
 
@@ -154,9 +190,18 @@
 - **Final Recon Loss:** 52.8648
 - **Final KL Loss:** 25.3110
 - **Proxy FID Score:** 0.33
-- **Reconstruction Images:** `results/vae_reconstructions/MNIST_VAE_latent16_epoch*.png`
-- **Random Samples:** `results/vae_samples/MNIST_VAE_latent16_random.png`
-- **Interpolations:** `results/vae_interpolations/MNIST_VAE_latent16_interpolation.png`
+
+**Reconstruction (Epoch 10):**
+
+<img src="vae_reconstructions/MNIST_VAE_latent16_epoch10.png" width="300">
+
+**Random Samples:**
+
+<img src="vae_samples/MNIST_VAE_latent16_random.png" width="300">
+
+**Latent Interpolation:**
+
+<img src="vae_interpolations/MNIST_VAE_latent16_interpolation.png" width="300">
 
 #### MNIST_VAE_latent8
 - **Latent Dimension:** 8
@@ -165,9 +210,18 @@
 - **Final Recon Loss:** 69.3989
 - **Final KL Loss:** 17.3960
 - **Proxy FID Score:** 0.25
-- **Reconstruction Images:** `results/vae_reconstructions/MNIST_VAE_latent8_epoch*.png`
-- **Random Samples:** `results/vae_samples/MNIST_VAE_latent8_random.png`
-- **Interpolations:** `results/vae_interpolations/MNIST_VAE_latent8_interpolation.png`
+
+**Reconstruction (Epoch 10):**
+
+<img src="vae_reconstructions/MNIST_VAE_latent8_epoch10.png" width="300">
+
+**Random Samples:**
+
+<img src="vae_samples/MNIST_VAE_latent8_random.png" width="300">
+
+**Latent Interpolation:**
+
+<img src="vae_interpolations/MNIST_VAE_latent8_interpolation.png" width="300">
 
 #### MNIST_VAE_latent32
 - **Latent Dimension:** 32
@@ -176,9 +230,18 @@
 - **Final Recon Loss:** 49.4401
 - **Final KL Loss:** 28.7360
 - **Proxy FID Score:** 0.40
-- **Reconstruction Images:** `results/vae_reconstructions/MNIST_VAE_latent32_epoch*.png`
-- **Random Samples:** `results/vae_samples/MNIST_VAE_latent32_random.png`
-- **Interpolations:** `results/vae_interpolations/MNIST_VAE_latent32_interpolation.png`
+
+**Reconstruction (Epoch 10):**
+
+<img src="vae_reconstructions/MNIST_VAE_latent32_epoch10.png" width="300">
+
+**Random Samples:**
+
+<img src="vae_samples/MNIST_VAE_latent32_random.png" width="300">
+
+**Latent Interpolation:**
+
+<img src="vae_interpolations/MNIST_VAE_latent32_interpolation.png" width="300">
 
 ## Part 2: VAE Experiments - FashionMNIST
 
@@ -195,9 +258,18 @@
 - **Final Recon Loss:** 86.0348
 - **Final KL Loss:** 22.3954
 - **Proxy FID Score:** 0.94
-- **Reconstruction Images:** `results/vae_reconstructions/FashionMNIST_VAE_latent16_epoch*.png`
-- **Random Samples:** `results/vae_samples/FashionMNIST_VAE_latent16_random.png`
-- **Interpolations:** `results/vae_interpolations/FashionMNIST_VAE_latent16_interpolation.png`
+
+**Reconstruction (Epoch 10):**
+
+<img src="vae_reconstructions/FashionMNIST_VAE_latent16_epoch10.png" width="300">
+
+**Random Samples:**
+
+<img src="vae_samples/FashionMNIST_VAE_latent16_random.png" width="300">
+
+**Latent Interpolation:**
+
+<img src="vae_interpolations/FashionMNIST_VAE_latent16_interpolation.png" width="300">
 
 #### FashionMNIST_VAE_latent8
 - **Latent Dimension:** 8
@@ -206,9 +278,18 @@
 - **Final Recon Loss:** 93.0578
 - **Final KL Loss:** 17.2976
 - **Proxy FID Score:** 0.78
-- **Reconstruction Images:** `results/vae_reconstructions/FashionMNIST_VAE_latent8_epoch*.png`
-- **Random Samples:** `results/vae_samples/FashionMNIST_VAE_latent8_random.png`
-- **Interpolations:** `results/vae_interpolations/FashionMNIST_VAE_latent8_interpolation.png`
+
+**Reconstruction (Epoch 10):**
+
+<img src="vae_reconstructions/FashionMNIST_VAE_latent8_epoch10.png" width="300">
+
+**Random Samples:**
+
+<img src="vae_samples/FashionMNIST_VAE_latent8_random.png" width="300">
+
+**Latent Interpolation:**
+
+<img src="vae_interpolations/FashionMNIST_VAE_latent8_interpolation.png" width="300">
 
 #### FashionMNIST_VAE_latent32
 - **Latent Dimension:** 32
@@ -217,9 +298,18 @@
 - **Final Recon Loss:** 92.4168
 - **Final KL Loss:** 22.2125
 - **Proxy FID Score:** 0.93
-- **Reconstruction Images:** `results/vae_reconstructions/FashionMNIST_VAE_latent32_epoch*.png`
-- **Random Samples:** `results/vae_samples/FashionMNIST_VAE_latent32_random.png`
-- **Interpolations:** `results/vae_interpolations/FashionMNIST_VAE_latent32_interpolation.png`
+
+**Reconstruction (Epoch 10):**
+
+<img src="vae_reconstructions/FashionMNIST_VAE_latent32_epoch10.png" width="300">
+
+**Random Samples:**
+
+<img src="vae_samples/FashionMNIST_VAE_latent32_random.png" width="300">
+
+**Latent Interpolation:**
+
+<img src="vae_interpolations/FashionMNIST_VAE_latent32_interpolation.png" width="300">
 
 ## Generated Images
 
