@@ -461,55 +461,6 @@ All generated images are saved in the `results/` directory. Key images are embed
 
 ---
 
-### All Image Files
-
-All generated images are saved in the `results/` directory:
-
-- `gan_samples/` - GAN generated samples for each experiment and epoch
-- `vae_reconstructions/` - VAE reconstruction comparisons
-- `vae_samples/` - VAE random samples from latent space
-- `vae_interpolations/` - VAE latent space interpolations
-- `models/` - Saved model checkpoints for FID computation
-
-## Mode Collapse Analysis
-
-> **Note:** You can answer all reflection questions regardless of whether mode collapse occurs.
-> - If mode collapse occurs: analyze which configurations caused it and what helped.
-> - If mode collapse doesn't occur: note which configurations were stable and why.
-
-### GAN Mode Collapse Summary
-
-- **No mode collapse detected** in any GAN experiments.
-- All experiments maintained good diversity throughout training.
-- This suggests the hyperparameters (loss type, Z_DIM, learning rate) were well-tuned.
-
-### Stable GAN Configurations (No Mode Collapse)
-
-- **MNIST_GAN_hinge_z64** (Loss: hinge, Z_DIM: 64)
-  - Final diversity score: 0.2908
-- **MNIST_GAN_hinge_z32** (Loss: hinge, Z_DIM: 32)
-  - Final diversity score: 0.3181
-- **MNIST_GAN_hinge_z128** (Loss: hinge, Z_DIM: 128)
-  - Final diversity score: 0.2985
-- **MNIST_GAN_bce_z64** (Loss: bce, Z_DIM: 64)
-  - Final diversity score: 0.2993
-- **MNIST_GAN_bce_z32** (Loss: bce, Z_DIM: 32)
-  - Final diversity score: 0.3056
-- **MNIST_GAN_bce_z128** (Loss: bce, Z_DIM: 128)
-  - Final diversity score: 0.3160
-- **FashionMNIST_GAN_hinge_z64** (Loss: hinge, Z_DIM: 64)
-  - Final diversity score: 0.5393
-- **FashionMNIST_GAN_hinge_z32** (Loss: hinge, Z_DIM: 32)
-  - Final diversity score: 0.5212
-- **FashionMNIST_GAN_hinge_z128** (Loss: hinge, Z_DIM: 128)
-  - Final diversity score: 0.4900
-- **FashionMNIST_GAN_bce_z64** (Loss: bce, Z_DIM: 64)
-  - Final diversity score: 0.5078
-- **FashionMNIST_GAN_bce_z32** (Loss: bce, Z_DIM: 32)
-  - Final diversity score: 0.5624
-- **FashionMNIST_GAN_bce_z128** (Loss: bce, Z_DIM: 128)
-  - Final diversity score: 0.5148
-
 ## Proxy FID Scores Summary
 
 ### GAN FID Scores
