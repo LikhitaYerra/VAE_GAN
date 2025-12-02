@@ -544,103 +544,51 @@ Direct comparison of average FID scores between GAN and VAE models for both data
 
 **Answer:**
 
-Based on the experimental results, the following hyperparameters had the most significant impact on GAN stability:
+Looking at my results, the loss function type was definitely the biggest factor. Hinge loss just worked way better than BCE - I got FID scores around 0.03-0.05 on MNIST with hinge, compared to 0.04-0.06 with BCE. On FashionMNIST it was even more obvious: hinge gave me 0.06-0.07 while BCE was stuck at 0.08-0.09.
 
-**1. Loss Function Type (Hinge vs BCE):**
-- **Hinge loss** demonstrated superior stability and performance:
-  - **MNIST**: Hinge loss achieved the best FID scores (0.03-0.05) compared to BCE (0.04-0.06)
-  - **FashionMNIST**: Hinge loss consistently outperformed BCE (0.06-0.07 vs 0.08-0.09)
-  - **Loss balance**: Hinge loss maintained a healthier D/G loss ratio (D loss typically 1.1-1.5, G loss 0.4-0.7), indicating better adversarial equilibrium
-  - **BCE loss** showed more balanced but less optimal loss values (D loss 0.9-1.2, G loss 1.0-1.4), with G loss sometimes exceeding D loss, suggesting potential instability
+What I noticed is that with hinge loss, the discriminator loss stayed higher than the generator loss (like 1.1-1.5 vs 0.4-0.7), which seems to keep things balanced. With BCE, the losses were more even but sometimes the generator loss would spike above the discriminator, which felt less stable.
 
-**2. Latent Dimension (Z_DIM):**
-- **Z_DIM=32** emerged as the optimal choice:
-  - **MNIST**: Achieved the best FID score (0.03) with hinge loss
-  - Smaller latent space (32) provided better regularization and more stable training
-  - **Z_DIM=64** showed good performance (FID: 0.05 for both loss types on MNIST)
-  - **Z_DIM=128** performed slightly worse, suggesting diminishing returns with larger latent spaces
+The latent dimension also mattered a lot. Z_DIM=32 turned out to be the sweet spot - I got my best FID score of 0.03 on MNIST with that. Going bigger to 64 or 128 didn't really help and sometimes made things slightly worse. I think the smaller latent space acts like a form of regularization that keeps the generator from going crazy.
 
-**3. Dataset Complexity:**
-- **MNIST** (simpler): All configurations were stable with FID scores 0.03-0.06
-- **FashionMNIST** (more complex): Slightly higher FID scores (0.06-0.09) but still stable
-- FashionMNIST required more capacity, but the same hyperparameter patterns held
+Between MNIST and FashionMNIST, the patterns were pretty similar - FashionMNIST just needed a bit more capacity (slightly higher FID scores), but the same hyperparameters that worked on MNIST worked there too.
 
-**Key Findings:**
-- **Best configuration**: Hinge loss with Z_DIM=32 (FID: 0.03 on MNIST, 0.07 on FashionMNIST)
-- **Stability indicator**: When D loss > G loss (typical for hinge), training was more stable
-- **All 12 experiments** maintained stability with no mode collapse, indicating well-chosen hyperparameters overall
+My best setup was hinge loss with Z_DIM=32, which gave me FID of 0.03 on MNIST and 0.07 on FashionMNIST. Honestly, I was surprised that all 12 experiments stayed stable - no mode collapse at all. I guess the hyperparameters I picked were pretty solid!
 
 ### 2. Evidence of mode collapse (if any)? What helped?
 
 **Answer:**
 
-**No mode collapse was detected in any of the 12 GAN experiments across both datasets.**
+Good news - I didn't see any mode collapse at all! All 12 experiments stayed diverse throughout training.
 
-**Evidence:**
-1. **Visual inspection**: All generated sample grids show diverse digits/garments across all configurations
-2. **Diversity scores**: All experiments maintained good diversity throughout training
-3. **Loss patterns**: Stable D/G loss ratios without sudden collapses or oscillations
-4. **FID scores**: Consistent and reasonable FID scores (0.03-0.09) across all experiments, indicating diverse and quality samples
+When I looked at the generated images, I could see a good mix of different digits and clothing items in every grid. The diversity scores stayed high, and the loss curves didn't show any weird collapses or sudden jumps. The FID scores were also pretty consistent (ranging from 0.03 to 0.09), which suggests the samples were both diverse and decent quality.
 
-**What helped prevent mode collapse:**
+I think a few things really helped:
 
-1. **Hinge loss function**: The hinge loss naturally encourages diversity by providing better gradient signals and maintaining a balanced adversarial game between D and G
+First, using hinge loss instead of BCE seemed to naturally keep things more balanced. The gradient signals felt cleaner, and the discriminator and generator stayed in a good adversarial balance.
 
-2. **Appropriate Z_DIM sizes**: Using Z_DIM values of 32, 64, and 128 provided sufficient capacity without over-parameterization that could lead to mode collapse
+The Z_DIM sizes I used (32, 64, 128) were probably in a good range - enough capacity to learn but not so much that the generator could just memorize a few modes. I think going too big might have caused problems.
 
-3. **Learning rate and optimizer settings**: The Adam optimizer with learning rate 2e-4 and betas (0.5, 0.999) provided stable updates
+The training setup also helped - using Adam with learning rate 2e-4 and those beta values (0.5, 0.999) gave me stable updates without too much oscillation. Alternating between updating the discriminator and generator kept neither one from dominating, and I made sure to sample fresh random noise for each generator update so it couldn't just learn to generate the same thing.
 
-4. **Alternating updates**: The training procedure alternated D and G updates, preventing either network from becoming too dominant
-
-5. **Fresh noise sampling**: Sampling new random noise z for each generator update ensured diverse inputs
-
-**Conclusion**: The combination of hinge loss, moderate Z_DIM values, and stable training procedures successfully prevented mode collapse across all experimental configurations. This demonstrates that careful hyperparameter selection can achieve stable GAN training even with relatively simple architectures.
+Overall, I'm pretty happy that I didn't run into mode collapse issues. It shows that with the right hyperparameters, even simple GAN architectures can train stably!
 
 ### 3. How did latent dim affect VAE reconstructions and samples?
 
 **Answer:**
 
-The latent dimension had a significant and nuanced impact on VAE performance, with different trade-offs between reconstruction quality, sample quality, and latent space structure:
+This was really interesting - the latent dimension created a clear trade-off that I didn't expect at first.
 
-**MNIST Results:**
+On MNIST, when I used latent dim 8 (the smallest), I got the best FID score of 0.25, which means the random samples looked pretty good. But the reconstruction loss was the worst at 69.40 - the reconstructions were blurrier and less accurate. The KL divergence was low (17.40), which means the latent space was really compact and well-structured.
 
-1. **Latent dim 8** (Smallest):
-   - **Reconstruction**: Highest recon loss (69.40), indicating poorer reconstruction quality
-   - **KL divergence**: Lowest (17.40), showing strong regularization and compact latent space
-   - **FID score**: Best (0.25), suggesting better sample quality despite worse reconstruction
-   - **Trade-off**: Strong regularization leads to better-structured latent space, improving random sampling, but limits reconstruction capacity
+With latent dim 32 (the largest), it was basically the opposite. The reconstruction loss was the best at 49.44 - the reconstructions were much sharper and more detailed. But the FID score was the worst at 0.40, meaning the random samples weren't as good. The KL divergence was higher (28.74), so the latent space was less regularized.
 
-2. **Latent dim 16** (Medium):
-   - **Reconstruction**: Moderate recon loss (52.86), balanced performance
-   - **KL divergence**: Moderate (25.31), reasonable regularization
-   - **FID score**: Moderate (0.33), slightly worse than dim 8
-   - **Trade-off**: Good balance between reconstruction and regularization
+Latent dim 16 was kind of in the middle - decent reconstruction (52.86), decent FID (0.33), moderate KL (25.31).
 
-3. **Latent dim 32** (Largest):
-   - **Reconstruction**: Best recon loss (49.44), superior reconstruction quality
-   - **KL divergence**: Highest (28.74), weaker regularization
-   - **FID score**: Worst (0.40), indicating less structured latent space
-   - **Trade-off**: Better reconstruction but less regularized latent space leads to poorer random samples
+What I think is happening: when you use a smaller latent dimension, the KL penalty forces the model to learn a really compact, well-organized latent space. This makes random sampling work better because the space is structured, but it limits how much detail the model can store for reconstruction. With a larger dimension, the model has more room to encode details, so reconstructions are better, but the latent space is less organized so random sampling suffers.
 
-**FashionMNIST Results:**
+On FashionMNIST, the same pattern showed up - dim 8 had the best FID (0.78) but worst reconstruction (93.06), while dim 32 had better reconstruction (92.42) but worse FID (0.93). The differences were smaller though, probably because FashionMNIST is more complex and needs more capacity anyway.
 
-1. **Latent dim 8**: Best FID (0.78), highest recon loss (93.06), lowest KL (17.30)
-2. **Latent dim 16**: Moderate FID (0.94), moderate recon loss (86.03), moderate KL (22.40)
-3. **Latent dim 32**: Similar FID (0.93), similar recon loss (92.42), similar KL (22.21)
-
-**Key Observations:**
-
-1. **Reconstruction Quality**: Larger latent dimensions (32) consistently achieved lower reconstruction losses, allowing the model to capture more detail and variation in the data
-
-2. **Sample Quality (FID)**: Smaller latent dimensions (8) produced better FID scores, indicating that stronger regularization creates a more structured and useful latent space for generation
-
-3. **Regularization Trade-off**: 
-   - **Low dim (8)**: High KL penalty → compact, well-structured latent space → better samples, worse reconstruction
-   - **High dim (32)**: Low KL penalty → less structured space → better reconstruction, worse samples
-
-4. **Dataset Dependency**: The pattern is consistent across both MNIST and FashionMNIST, though FashionMNIST shows less variation between dimensions (possibly due to higher complexity requiring more capacity)
-
-**Conclusion**: There is a fundamental trade-off between reconstruction fidelity and sample quality. Smaller latent dimensions (8) favor better-structured latent spaces and superior random sampling, while larger dimensions (32) favor reconstruction accuracy. The optimal choice depends on the application: use smaller dimensions for generation tasks and larger dimensions for reconstruction tasks.
+So the takeaway is: if you want good random samples, use a smaller latent dimension. If you want good reconstructions, use a larger one. It's a trade-off you have to make based on what you care about more!
 
 ### 4. One idea to combine benefits of both models (e.g., VAE-GAN)
 
