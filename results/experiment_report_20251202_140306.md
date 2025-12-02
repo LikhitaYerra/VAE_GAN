@@ -461,6 +461,57 @@ All generated images are saved in the `results/` directory. Key images are embed
 
 ---
 
+## Analysis Plots
+
+### GAN Loss Comparison
+
+**Loss Comparison by Dataset and Loss Type:**
+
+<img src="plots/gan_loss_comparison.png" width="800">
+
+This plot shows Discriminator (D) and Generator (G) losses for all GAN experiments, comparing:
+- Hinge vs BCE loss functions
+- Different Z dimensions (32, 64, 128)
+- MNIST vs FashionMNIST datasets
+
+### GAN FID Scores Comparison
+
+**FID Scores by Configuration:**
+
+<img src="plots/gan_fid_comparison.png" width="800">
+
+Lower FID scores indicate better sample quality. This comparison shows how different loss types and Z dimensions affect generation quality.
+
+### VAE Loss Analysis
+
+**VAE Loss Components (Total, Reconstruction, KL):**
+
+<img src="plots/vae_loss_comparison.png" width="800">
+
+This plot shows:
+- Total loss (reconstruction + KL divergence)
+- Reconstruction loss (how well images are reconstructed)
+- KL loss (regularization term)
+- FID scores by latent dimension
+
+### VAE FID Scores Comparison
+
+**FID Scores by Latent Dimension:**
+
+<img src="plots/vae_fid_comparison.png" width="800">
+
+Comparison of VAE sample quality across different latent dimensions (8, 16, 32).
+
+### GAN vs VAE Overall Comparison
+
+**Average FID Scores: GAN vs VAE**
+
+<img src="plots/fid_gan_vs_vae.png" width="800">
+
+Direct comparison of average FID scores between GAN and VAE models for both datasets.
+
+---
+
 ## Proxy FID Scores Summary
 
 ### GAN FID Scores
