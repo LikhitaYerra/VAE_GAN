@@ -30,9 +30,15 @@
 - **Final G Loss:** 0.6088
 - **Proxy FID Score:** 0.05
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/MNIST_GAN_hinge_z64_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/MNIST_GAN_hinge_z64_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/MNIST_GAN_hinge_z64_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/MNIST_GAN_hinge_z64_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### MNIST_GAN_hinge_z32
 - **Loss Type:** hinge
@@ -42,9 +48,15 @@
 - **Final G Loss:** 0.5416
 - **Proxy FID Score:** 0.03
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/MNIST_GAN_hinge_z32_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/MNIST_GAN_hinge_z32_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/MNIST_GAN_hinge_z32_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/MNIST_GAN_hinge_z32_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### MNIST_GAN_hinge_z128
 - **Loss Type:** hinge
@@ -54,9 +66,15 @@
 - **Final G Loss:** 0.6788
 - **Proxy FID Score:** 0.04
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/MNIST_GAN_hinge_z128_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/MNIST_GAN_hinge_z128_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/MNIST_GAN_hinge_z128_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/MNIST_GAN_hinge_z128_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### MNIST_GAN_bce_z64
 - **Loss Type:** bce
@@ -66,9 +84,15 @@
 - **Final G Loss:** 1.2392
 - **Proxy FID Score:** 0.05
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/MNIST_GAN_bce_z64_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/MNIST_GAN_bce_z64_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/MNIST_GAN_bce_z64_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/MNIST_GAN_bce_z64_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### MNIST_GAN_bce_z32
 - **Loss Type:** bce
@@ -78,9 +102,15 @@
 - **Final G Loss:** 1.1143
 - **Proxy FID Score:** 0.04
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/MNIST_GAN_bce_z32_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/MNIST_GAN_bce_z32_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/MNIST_GAN_bce_z32_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/MNIST_GAN_bce_z32_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### MNIST_GAN_bce_z128
 - **Loss Type:** bce
@@ -90,9 +120,15 @@
 - **Final G Loss:** 1.4068
 - **Proxy FID Score:** 0.06
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/MNIST_GAN_bce_z128_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/MNIST_GAN_bce_z128_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/MNIST_GAN_bce_z128_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/MNIST_GAN_bce_z128_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 ## Part 1: GAN Experiments - FashionMNIST
 
@@ -111,9 +147,15 @@
 - **Final G Loss:** 0.4709
 - **Proxy FID Score:** 0.06
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_hinge_z64_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z64_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z64_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z64_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### FashionMNIST_GAN_hinge_z32
 - **Loss Type:** hinge
@@ -123,9 +165,15 @@
 - **Final G Loss:** 0.4275
 - **Proxy FID Score:** 0.07
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_hinge_z32_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z32_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z32_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z32_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### FashionMNIST_GAN_hinge_z128
 - **Loss Type:** hinge
@@ -135,9 +183,15 @@
 - **Final G Loss:** 0.5369
 - **Proxy FID Score:** 0.06
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_hinge_z128_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z128_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z128_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z128_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### FashionMNIST_GAN_bce_z64
 - **Loss Type:** bce
@@ -147,9 +201,15 @@
 - **Final G Loss:** 1.0390
 - **Proxy FID Score:** 0.08
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_bce_z64_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z64_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z64_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z64_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### FashionMNIST_GAN_bce_z32
 - **Loss Type:** bce
@@ -159,9 +219,15 @@
 - **Final G Loss:** 1.0175
 - **Proxy FID Score:** 0.09
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_bce_z32_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z32_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z32_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z32_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 #### FashionMNIST_GAN_bce_z128
 - **Loss Type:** bce
@@ -171,9 +237,15 @@
 - **Final G Loss:** 1.1701
 - **Proxy FID Score:** 0.08
 
-**Sample Images (Epoch 10):**
+**Sample Images (Epochs 1, 5, 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_bce_z128_epoch10.png" width="200">
+<table>
+<tr>
+<td><strong>Epoch 1</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z128_epoch1.png" width="120"></td>
+<td><strong>Epoch 5</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z128_epoch5.png" width="120"></td>
+<td><strong>Epoch 10</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z128_epoch10.png" width="120"></td>
+</tr>
+</table>
 
 ## Part 2: VAE Experiments - MNIST
 
@@ -505,51 +577,19 @@ Direct comparison of average FID scores between GAN and VAE models for both data
 
 **Answer:**
 
-Looking at my results, the loss function type was definitely the biggest factor. Hinge loss just worked way better than BCE - I got FID scores around 0.03-0.05 on MNIST with hinge, compared to 0.04-0.06 with BCE. On FashionMNIST it was even more obvious: hinge gave me 0.06-0.07 while BCE was stuck at 0.08-0.09.
-
-What I noticed is that with hinge loss, the discriminator loss stayed higher than the generator loss (like 1.1-1.5 vs 0.4-0.7), which seems to keep things balanced. With BCE, the losses were more even but sometimes the generator loss would spike above the discriminator, which felt less stable.
-
-The latent dimension also mattered a lot. Z_DIM=32 turned out to be the sweet spot - I got my best FID score of 0.03 on MNIST with that. Going bigger to 64 or 128 didn't really help and sometimes made things slightly worse. I think the smaller latent space acts like a form of regularization that keeps the generator from going crazy.
-
-Between MNIST and FashionMNIST, the patterns were pretty similar - FashionMNIST just needed a bit more capacity (slightly higher FID scores), but the same hyperparameters that worked on MNIST worked there too.
-
-My best setup was hinge loss with Z_DIM=32, which gave me FID of 0.03 on MNIST and 0.07 on FashionMNIST. Honestly, I was surprised that all 12 experiments stayed stable - no mode collapse at all. I guess the hyperparameters I picked were pretty solid!
+The loss function type was the biggest factor - hinge loss outperformed BCE (FID 0.03-0.05 vs 0.04-0.06 on MNIST). Hinge loss kept D loss higher than G loss (1.1-1.5 vs 0.4-0.7), maintaining better balance. Z_DIM=32 was optimal, giving the best FID of 0.03 on MNIST. Larger dimensions (64, 128) didn't help and sometimes performed worse. The same patterns held for FashionMNIST. Best configuration: hinge loss with Z_DIM=32 (FID: 0.03 on MNIST, 0.07 on FashionMNIST). All 12 experiments remained stable with no mode collapse.
 
 ### 2. Evidence of mode collapse (if any)? What helped?
 
 **Answer:**
 
-Good news - I didn't see any mode collapse at all! All 12 experiments stayed diverse throughout training.
-
-When I looked at the generated images, I could see a good mix of different digits and clothing items in every grid. The diversity scores stayed high, and the loss curves didn't show any weird collapses or sudden jumps. The FID scores were also pretty consistent (ranging from 0.03 to 0.09), which suggests the samples were both diverse and decent quality.
-
-I think a few things really helped:
-
-First, using hinge loss instead of BCE seemed to naturally keep things more balanced. The gradient signals felt cleaner, and the discriminator and generator stayed in a good adversarial balance.
-
-The Z_DIM sizes I used (32, 64, 128) were probably in a good range - enough capacity to learn but not so much that the generator could just memorize a few modes. I think going too big might have caused problems.
-
-The training setup also helped - using Adam with learning rate 2e-4 and those beta values (0.5, 0.999) gave me stable updates without too much oscillation. Alternating between updating the discriminator and generator kept neither one from dominating, and I made sure to sample fresh random noise for each generator update so it couldn't just learn to generate the same thing.
-
-Overall, I'm pretty happy that I didn't run into mode collapse issues. It shows that with the right hyperparameters, even simple GAN architectures can train stably!
+No mode collapse detected in any of the 12 experiments. All generated images showed diverse digits/garments, diversity scores remained high, and FID scores were consistent (0.03-0.09). Key factors that helped: (1) Hinge loss provided better gradient signals and maintained adversarial balance, (2) Z_DIM values (32, 64, 128) provided sufficient capacity without over-parameterization, (3) Adam optimizer with lr=2e-4 and betas=(0.5, 0.999) gave stable updates, (4) Alternating D/G updates prevented dominance, (5) Fresh noise sampling for each update ensured diversity. This demonstrates that careful hyperparameter selection enables stable GAN training.
 
 ### 3. How did latent dim affect VAE reconstructions and samples?
 
 **Answer:**
 
-This was really interesting - the latent dimension created a clear trade-off that I didn't expect at first.
-
-On MNIST, when I used latent dim 8 (the smallest), I got the best FID score of 0.25, which means the random samples looked pretty good. But the reconstruction loss was the worst at 69.40 - the reconstructions were blurrier and less accurate. The KL divergence was low (17.40), which means the latent space was really compact and well-structured.
-
-With latent dim 32 (the largest), it was basically the opposite. The reconstruction loss was the best at 49.44 - the reconstructions were much sharper and more detailed. But the FID score was the worst at 0.40, meaning the random samples weren't as good. The KL divergence was higher (28.74), so the latent space was less regularized.
-
-Latent dim 16 was kind of in the middle - decent reconstruction (52.86), decent FID (0.33), moderate KL (25.31).
-
-What I think is happening: when you use a smaller latent dimension, the KL penalty forces the model to learn a really compact, well-organized latent space. This makes random sampling work better because the space is structured, but it limits how much detail the model can store for reconstruction. With a larger dimension, the model has more room to encode details, so reconstructions are better, but the latent space is less organized so random sampling suffers.
-
-On FashionMNIST, the same pattern showed up - dim 8 had the best FID (0.78) but worst reconstruction (93.06), while dim 32 had better reconstruction (92.42) but worse FID (0.93). The differences were smaller though, probably because FashionMNIST is more complex and needs more capacity anyway.
-
-So the takeaway is: if you want good random samples, use a smaller latent dimension. If you want good reconstructions, use a larger one. It's a trade-off you have to make based on what you care about more!
+The latent dimension created a clear trade-off. On MNIST: dim 8 gave best FID (0.25) but worst reconstruction (69.40) with low KL (17.40) - compact, well-structured latent space. Dim 32 gave best reconstruction (49.44) but worst FID (0.40) with high KL (28.74) - less regularized space. Dim 16 was balanced (recon: 52.86, FID: 0.33). The pattern: smaller dimensions create compact, structured latent spaces (better for sampling) but limit reconstruction detail. Larger dimensions allow better reconstruction but less organized latent space (worse for sampling). Same pattern on FashionMNIST. Conclusion: use smaller dims for generation, larger dims for reconstruction.
 
 ### 4. One idea to combine benefits of both models (e.g., VAE-GAN)
 
@@ -561,15 +601,5 @@ So the takeaway is: if you want good random samples, use a smaller latent dimens
 
 **Answer:**
 
-I think a VAE-GAN hybrid could be really cool! The way I see it, GANs make super sharp images (my FID scores were 0.03-0.09) but their latent space is just random noise - you can't really do much with it. VAEs have this nice structured latent space where you can interpolate smoothly and understand what's going on, but the samples are blurry (FID 0.25-0.94).
-
-So here's my idea: use the VAE encoder to create a structured latent space from real images. Instead of having the GAN generator work with random noise, have it generate in this VAE latent space. Then decode those generated latents to get images. This way you get GAN's sharpness with VAE's interpretable latent space.
-
-I'd set it up with two discriminators - one that looks at the latent codes themselves (to make sure the generated latents look like real ones from the encoder), and one that looks at the final images (to make sure they look realistic). The loss would combine the VAE reconstruction/KL loss with the GAN adversarial loss.
-
-The benefits would be: sharper samples than pure VAE (because of the adversarial training), but with a latent space you can actually work with (unlike pure GAN). Plus, you'd still be able to encode and reconstruct real images like a VAE.
-
-For training, I'd probably start by training a VAE first, then freeze the decoder and train a generator in that latent space. Once that's working, I could unfreeze the decoder and fine-tune everything together. Based on my results, I'd use VAE latent dim 8-16 (for good structure) and GAN hinge loss with Z_DIM 32-64 (for stability).
-
-It's basically trying to get the best of both worlds - sharp images AND a useful latent space!
+Proposed VAE-GAN hybrid: Use VAE encoder to create structured latent space from real images. GAN generator operates in this VAE latent space (instead of random noise), then decode to images. This combines GAN's sharpness (FID 0.03-0.09) with VAE's interpretable latent space. Setup: dual discriminators (latent + image) and hybrid loss (VAE reconstruction/KL + GAN adversarial). Benefits: sharper samples than pure VAE, structured latent space unlike pure GAN, maintains reconstruction capability. Training strategy: pre-train VAE, freeze decoder and train generator in latent space, then fine-tune together. Use VAE latent dim 8-16 and GAN hinge loss with Z_DIM 32-64 based on results.
 
