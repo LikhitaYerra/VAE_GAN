@@ -1,6 +1,6 @@
-# 🧪 Lab 1 — Generative Models: GAN vs VAE - Complete Experiment Report
+# 🧪 Lab 1 — Generative Models: GAN vs VAE 
 
-**Generated:** 2025-12-02 14:03:06
+
 
 ---
 
