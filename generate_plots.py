@@ -160,7 +160,8 @@ def create_plots(gan_data, vae_data):
             ax2.set_title('GAN FID Scores - FashionMNIST (No Data)')
     
     plt.tight_layout()
-    plt.savefig(f"{RESULTS_DIR}/plots/gan_fid_comparison.png", dpi=150, bbox_inches='tight')
+    plt.savefig(f"{RESULTS_DIR}/plots/gan_fid_comparison.png", dpi=200, bbox_inches='tight',
+                facecolor='white', edgecolor='none')
     plt.close()
     print(f"Saved: {RESULTS_DIR}/plots/gan_fid_comparison.png")
     
@@ -212,7 +213,8 @@ def create_plots(gan_data, vae_data):
         fashion_vae_fids = []
     
     plt.tight_layout()
-    plt.savefig(f"{RESULTS_DIR}/plots/vae_fid_comparison.png", dpi=150, bbox_inches='tight')
+    plt.savefig(f"{RESULTS_DIR}/plots/vae_fid_comparison.png", dpi=200, bbox_inches='tight',
+                facecolor='white', edgecolor='none')
     plt.close()
     print(f"Saved: {RESULTS_DIR}/plots/vae_fid_comparison.png")
     
@@ -317,7 +319,8 @@ def create_plots(gan_data, vae_data):
         axes[1, 1].set_title('FashionMNIST - BCE Loss (No Data)')
     
     plt.tight_layout()
-    plt.savefig(f"{RESULTS_DIR}/plots/gan_loss_comparison.png", dpi=150, bbox_inches='tight')
+    plt.savefig(f"{RESULTS_DIR}/plots/gan_loss_comparison.png", dpi=200, bbox_inches='tight',
+                facecolor='white', edgecolor='none')
     plt.close()
     print(f"Saved: {RESULTS_DIR}/plots/gan_loss_comparison.png")
     
@@ -413,7 +416,8 @@ def create_plots(gan_data, vae_data):
         axes[1, 1].set_title('FashionMNIST - VAE FID by Latent Dim (No Data)')
     
     plt.tight_layout()
-    plt.savefig(f"{RESULTS_DIR}/plots/vae_loss_comparison.png", dpi=150, bbox_inches='tight')
+    plt.savefig(f"{RESULTS_DIR}/plots/vae_loss_comparison.png", dpi=200, bbox_inches='tight',
+                facecolor='white', edgecolor='none')
     plt.close()
     print(f"Saved: {RESULTS_DIR}/plots/vae_loss_comparison.png")
     
@@ -463,7 +467,8 @@ def create_plots(gan_data, vae_data):
         ax2.set_title('FashionMNIST - Average FID: GAN vs VAE (No Data)')
     
     plt.tight_layout()
-    plt.savefig(f"{RESULTS_DIR}/plots/fid_gan_vs_vae.png", dpi=150, bbox_inches='tight')
+    plt.savefig(f"{RESULTS_DIR}/plots/fid_gan_vs_vae.png", dpi=200, bbox_inches='tight',
+                facecolor='white', edgecolor='none')
     plt.close()
     print(f"Saved: {RESULTS_DIR}/plots/fid_gan_vs_vae.png")
 
