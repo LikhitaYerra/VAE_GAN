@@ -1,0 +1,27 @@
+EXPERIMENT SUMMARY
+============================================================
+
+Datasets: MNIST, FashionMNIST
+GAN Experiments: 12
+  - FashionMNIST_GAN_bce_z128
+  - FashionMNIST_GAN_bce_z32
+  - FashionMNIST_GAN_bce_z64
+  - FashionMNIST_GAN_hinge_z128
+  - FashionMNIST_GAN_hinge_z32
+  - FashionMNIST_GAN_hinge_z64
+  - MNIST_GAN_bce_z128
+  - MNIST_GAN_bce_z32
+  - MNIST_GAN_bce_z64
+  - MNIST_GAN_hinge_z128
+  - MNIST_GAN_hinge_z32
+  - MNIST_GAN_hinge_z64
+
+VAE Experiments: 6
+  - FashionMNIST_VAE_latent16
+  - FashionMNIST_VAE_latent32
+  - FashionMNIST_VAE_latent8
+  - MNIST_VAE_latent16
+  - MNIST_VAE_latent32
+  - MNIST_VAE_latent8
+
+All outputs saved in: results/

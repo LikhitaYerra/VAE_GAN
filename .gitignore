@@ -8,12 +8,14 @@ __pycache__/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Data and results
+# Data (but keep results folder for report and images)
 data/
-results/
 *.pth
 *.pt
 *.pkl
+
+# Keep results folder but ignore model files
+results/models/
 
 # Environment
 venv/
