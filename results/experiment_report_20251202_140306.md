@@ -32,7 +32,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/MNIST_GAN_hinge_z64_epoch10.png" width="300">
+<img src="gan_samples/MNIST_GAN_hinge_z64_epoch10.png" width="200">
 
 #### MNIST_GAN_hinge_z32
 - **Loss Type:** hinge
@@ -44,7 +44,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/MNIST_GAN_hinge_z32_epoch10.png" width="300">
+<img src="gan_samples/MNIST_GAN_hinge_z32_epoch10.png" width="200">
 
 #### MNIST_GAN_hinge_z128
 - **Loss Type:** hinge
@@ -56,7 +56,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/MNIST_GAN_hinge_z128_epoch10.png" width="300">
+<img src="gan_samples/MNIST_GAN_hinge_z128_epoch10.png" width="200">
 
 #### MNIST_GAN_bce_z64
 - **Loss Type:** bce
@@ -68,7 +68,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/MNIST_GAN_bce_z64_epoch10.png" width="300">
+<img src="gan_samples/MNIST_GAN_bce_z64_epoch10.png" width="200">
 
 #### MNIST_GAN_bce_z32
 - **Loss Type:** bce
@@ -80,7 +80,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/MNIST_GAN_bce_z32_epoch10.png" width="300">
+<img src="gan_samples/MNIST_GAN_bce_z32_epoch10.png" width="200">
 
 #### MNIST_GAN_bce_z128
 - **Loss Type:** bce
@@ -92,7 +92,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/MNIST_GAN_bce_z128_epoch10.png" width="300">
+<img src="gan_samples/MNIST_GAN_bce_z128_epoch10.png" width="200">
 
 ## Part 1: GAN Experiments - FashionMNIST
 
@@ -113,7 +113,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_hinge_z64_epoch10.png" width="300">
+<img src="gan_samples/FashionMNIST_GAN_hinge_z64_epoch10.png" width="200">
 
 #### FashionMNIST_GAN_hinge_z32
 - **Loss Type:** hinge
@@ -125,7 +125,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_hinge_z32_epoch10.png" width="300">
+<img src="gan_samples/FashionMNIST_GAN_hinge_z32_epoch10.png" width="200">
 
 #### FashionMNIST_GAN_hinge_z128
 - **Loss Type:** hinge
@@ -137,7 +137,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_hinge_z128_epoch10.png" width="300">
+<img src="gan_samples/FashionMNIST_GAN_hinge_z128_epoch10.png" width="200">
 
 #### FashionMNIST_GAN_bce_z64
 - **Loss Type:** bce
@@ -149,7 +149,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_bce_z64_epoch10.png" width="300">
+<img src="gan_samples/FashionMNIST_GAN_bce_z64_epoch10.png" width="200">
 
 #### FashionMNIST_GAN_bce_z32
 - **Loss Type:** bce
@@ -161,7 +161,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_bce_z32_epoch10.png" width="300">
+<img src="gan_samples/FashionMNIST_GAN_bce_z32_epoch10.png" width="200">
 
 #### FashionMNIST_GAN_bce_z128
 - **Loss Type:** bce
@@ -173,7 +173,7 @@
 
 **Sample Images (Epoch 10):**
 
-<img src="gan_samples/FashionMNIST_GAN_bce_z128_epoch10.png" width="300">
+<img src="gan_samples/FashionMNIST_GAN_bce_z128_epoch10.png" width="200">
 
 ## Part 2: VAE Experiments - MNIST
 
@@ -191,17 +191,15 @@
 - **Final KL Loss:** 25.3110
 - **Proxy FID Score:** 0.33
 
-**Reconstruction (Epoch 10):**
+**Reconstruction, Random Samples, Interpolation:**
 
-<img src="vae_reconstructions/MNIST_VAE_latent16_epoch10.png" width="300">
-
-**Random Samples:**
-
-<img src="vae_samples/MNIST_VAE_latent16_random.png" width="300">
-
-**Latent Interpolation:**
-
-<img src="vae_interpolations/MNIST_VAE_latent16_interpolation.png" width="300">
+<table>
+<tr>
+<td><strong>Reconstruction</strong><br><img src="vae_reconstructions/MNIST_VAE_latent16_epoch10.png" width="180"></td>
+<td><strong>Random Samples</strong><br><img src="vae_samples/MNIST_VAE_latent16_random.png" width="180"></td>
+<td><strong>Interpolation</strong><br><img src="vae_interpolations/MNIST_VAE_latent16_interpolation.png" width="180"></td>
+</tr>
+</table>
 
 #### MNIST_VAE_latent8
 - **Latent Dimension:** 8
@@ -211,17 +209,15 @@
 - **Final KL Loss:** 17.3960
 - **Proxy FID Score:** 0.25
 
-**Reconstruction (Epoch 10):**
+**Reconstruction, Random Samples, Interpolation:**
 
-<img src="vae_reconstructions/MNIST_VAE_latent8_epoch10.png" width="300">
-
-**Random Samples:**
-
-<img src="vae_samples/MNIST_VAE_latent8_random.png" width="300">
-
-**Latent Interpolation:**
-
-<img src="vae_interpolations/MNIST_VAE_latent8_interpolation.png" width="300">
+<table>
+<tr>
+<td><strong>Reconstruction</strong><br><img src="vae_reconstructions/MNIST_VAE_latent8_epoch10.png" width="180"></td>
+<td><strong>Random Samples</strong><br><img src="vae_samples/MNIST_VAE_latent8_random.png" width="180"></td>
+<td><strong>Interpolation</strong><br><img src="vae_interpolations/MNIST_VAE_latent8_interpolation.png" width="180"></td>
+</tr>
+</table>
 
 #### MNIST_VAE_latent32
 - **Latent Dimension:** 32
@@ -231,17 +227,15 @@
 - **Final KL Loss:** 28.7360
 - **Proxy FID Score:** 0.40
 
-**Reconstruction (Epoch 10):**
+**Reconstruction, Random Samples, Interpolation:**
 
-<img src="vae_reconstructions/MNIST_VAE_latent32_epoch10.png" width="300">
-
-**Random Samples:**
-
-<img src="vae_samples/MNIST_VAE_latent32_random.png" width="300">
-
-**Latent Interpolation:**
-
-<img src="vae_interpolations/MNIST_VAE_latent32_interpolation.png" width="300">
+<table>
+<tr>
+<td><strong>Reconstruction</strong><br><img src="vae_reconstructions/MNIST_VAE_latent32_epoch10.png" width="180"></td>
+<td><strong>Random Samples</strong><br><img src="vae_samples/MNIST_VAE_latent32_random.png" width="180"></td>
+<td><strong>Interpolation</strong><br><img src="vae_interpolations/MNIST_VAE_latent32_interpolation.png" width="180"></td>
+</tr>
+</table>
 
 ## Part 2: VAE Experiments - FashionMNIST
 
@@ -259,17 +253,15 @@
 - **Final KL Loss:** 22.3954
 - **Proxy FID Score:** 0.94
 
-**Reconstruction (Epoch 10):**
+**Reconstruction, Random Samples, Interpolation:**
 
-<img src="vae_reconstructions/FashionMNIST_VAE_latent16_epoch10.png" width="300">
-
-**Random Samples:**
-
-<img src="vae_samples/FashionMNIST_VAE_latent16_random.png" width="300">
-
-**Latent Interpolation:**
-
-<img src="vae_interpolations/FashionMNIST_VAE_latent16_interpolation.png" width="300">
+<table>
+<tr>
+<td><strong>Reconstruction</strong><br><img src="vae_reconstructions/FashionMNIST_VAE_latent16_epoch10.png" width="180"></td>
+<td><strong>Random Samples</strong><br><img src="vae_samples/FashionMNIST_VAE_latent16_random.png" width="180"></td>
+<td><strong>Interpolation</strong><br><img src="vae_interpolations/FashionMNIST_VAE_latent16_interpolation.png" width="180"></td>
+</tr>
+</table>
 
 #### FashionMNIST_VAE_latent8
 - **Latent Dimension:** 8
@@ -279,17 +271,15 @@
 - **Final KL Loss:** 17.2976
 - **Proxy FID Score:** 0.78
 
-**Reconstruction (Epoch 10):**
+**Reconstruction, Random Samples, Interpolation:**
 
-<img src="vae_reconstructions/FashionMNIST_VAE_latent8_epoch10.png" width="300">
-
-**Random Samples:**
-
-<img src="vae_samples/FashionMNIST_VAE_latent8_random.png" width="300">
-
-**Latent Interpolation:**
-
-<img src="vae_interpolations/FashionMNIST_VAE_latent8_interpolation.png" width="300">
+<table>
+<tr>
+<td><strong>Reconstruction</strong><br><img src="vae_reconstructions/FashionMNIST_VAE_latent8_epoch10.png" width="180"></td>
+<td><strong>Random Samples</strong><br><img src="vae_samples/FashionMNIST_VAE_latent8_random.png" width="180"></td>
+<td><strong>Interpolation</strong><br><img src="vae_interpolations/FashionMNIST_VAE_latent8_interpolation.png" width="180"></td>
+</tr>
+</table>
 
 #### FashionMNIST_VAE_latent32
 - **Latent Dimension:** 32
@@ -299,17 +289,15 @@
 - **Final KL Loss:** 22.2125
 - **Proxy FID Score:** 0.93
 
-**Reconstruction (Epoch 10):**
+**Reconstruction, Random Samples, Interpolation:**
 
-<img src="vae_reconstructions/FashionMNIST_VAE_latent32_epoch10.png" width="300">
-
-**Random Samples:**
-
-<img src="vae_samples/FashionMNIST_VAE_latent32_random.png" width="300">
-
-**Latent Interpolation:**
-
-<img src="vae_interpolations/FashionMNIST_VAE_latent32_interpolation.png" width="300">
+<table>
+<tr>
+<td><strong>Reconstruction</strong><br><img src="vae_reconstructions/FashionMNIST_VAE_latent32_epoch10.png" width="180"></td>
+<td><strong>Random Samples</strong><br><img src="vae_samples/FashionMNIST_VAE_latent32_random.png" width="180"></td>
+<td><strong>Interpolation</strong><br><img src="vae_interpolations/FashionMNIST_VAE_latent32_interpolation.png" width="180"></td>
+</tr>
+</table>
 
 ## Generated Images
 
@@ -345,89 +333,62 @@ All generated images are saved in the `results/` directory. Key images are embed
 
 #### FashionMNIST
 
-**FashionMNIST_GAN_hinge_z64** (Epoch 10):
-
-![FashionMNIST_GAN_hinge_z64](gan_samples/FashionMNIST_GAN_hinge_z64_epoch10.png)
-
-**FashionMNIST_GAN_hinge_z32** (Epoch 10):
-
-![FashionMNIST_GAN_hinge_z32](gan_samples/FashionMNIST_GAN_hinge_z32_epoch10.png)
-
-**FashionMNIST_GAN_hinge_z128** (Epoch 10):
-
-![FashionMNIST_GAN_hinge_z128](gan_samples/FashionMNIST_GAN_hinge_z128_epoch10.png)
-
-**FashionMNIST_GAN_bce_z64** (Epoch 10):
-
-![FashionMNIST_GAN_bce_z64](gan_samples/FashionMNIST_GAN_bce_z64_epoch10.png)
-
-**FashionMNIST_GAN_bce_z32** (Epoch 10):
-
-![FashionMNIST_GAN_bce_z32](gan_samples/FashionMNIST_GAN_bce_z32_epoch10.png)
-
-**FashionMNIST_GAN_bce_z128** (Epoch 10):
-
-![FashionMNIST_GAN_bce_z128](gan_samples/FashionMNIST_GAN_bce_z128_epoch10.png)
+<table>
+<tr>
+<td><strong>hinge z64</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z64_epoch10.png" width="180"></td>
+<td><strong>hinge z32</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z32_epoch10.png" width="180"></td>
+<td><strong>hinge z128</strong><br><img src="gan_samples/FashionMNIST_GAN_hinge_z128_epoch10.png" width="180"></td>
+</tr>
+<tr>
+<td><strong>bce z64</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z64_epoch10.png" width="180"></td>
+<td><strong>bce z32</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z32_epoch10.png" width="180"></td>
+<td><strong>bce z128</strong><br><img src="gan_samples/FashionMNIST_GAN_bce_z128_epoch10.png" width="180"></td>
+</tr>
+</table>
 
 ### VAE Reconstructions (Best Epoch)
 
 #### MNIST
 
-**MNIST_VAE_latent16** (Epoch 10):
-
-![MNIST_VAE_latent16 Reconstructions](vae_reconstructions/MNIST_VAE_latent16_epoch10.png)
-
-**MNIST_VAE_latent8** (Epoch 10):
-
-![MNIST_VAE_latent8 Reconstructions](vae_reconstructions/MNIST_VAE_latent8_epoch10.png)
-
-**MNIST_VAE_latent32** (Epoch 10):
-
-![MNIST_VAE_latent32 Reconstructions](vae_reconstructions/MNIST_VAE_latent32_epoch10.png)
+<table>
+<tr>
+<td><strong>latent 16</strong><br><img src="vae_reconstructions/MNIST_VAE_latent16_epoch10.png" width="180"></td>
+<td><strong>latent 8</strong><br><img src="vae_reconstructions/MNIST_VAE_latent8_epoch10.png" width="180"></td>
+<td><strong>latent 32</strong><br><img src="vae_reconstructions/MNIST_VAE_latent32_epoch10.png" width="180"></td>
+</tr>
+</table>
 
 #### FashionMNIST
 
-**FashionMNIST_VAE_latent16** (Epoch 10):
-
-![FashionMNIST_VAE_latent16 Reconstructions](vae_reconstructions/FashionMNIST_VAE_latent16_epoch10.png)
-
-**FashionMNIST_VAE_latent8** (Epoch 10):
-
-![FashionMNIST_VAE_latent8 Reconstructions](vae_reconstructions/FashionMNIST_VAE_latent8_epoch10.png)
-
-**FashionMNIST_VAE_latent32** (Epoch 10):
-
-![FashionMNIST_VAE_latent32 Reconstructions](vae_reconstructions/FashionMNIST_VAE_latent32_epoch10.png)
+<table>
+<tr>
+<td><strong>latent 16</strong><br><img src="vae_reconstructions/FashionMNIST_VAE_latent16_epoch10.png" width="180"></td>
+<td><strong>latent 8</strong><br><img src="vae_reconstructions/FashionMNIST_VAE_latent8_epoch10.png" width="180"></td>
+<td><strong>latent 32</strong><br><img src="vae_reconstructions/FashionMNIST_VAE_latent32_epoch10.png" width="180"></td>
+</tr>
+</table>
 
 ### VAE Random Samples
 
 #### MNIST
 
-**MNIST_VAE_latent16**:
-
-![MNIST_VAE_latent16 Random Samples](vae_samples/MNIST_VAE_latent16_random.png)
-
-**MNIST_VAE_latent8**:
-
-![MNIST_VAE_latent8 Random Samples](vae_samples/MNIST_VAE_latent8_random.png)
-
-**MNIST_VAE_latent32**:
-
-![MNIST_VAE_latent32 Random Samples](vae_samples/MNIST_VAE_latent32_random.png)
+<table>
+<tr>
+<td><strong>latent 16</strong><br><img src="vae_samples/MNIST_VAE_latent16_random.png" width="180"></td>
+<td><strong>latent 8</strong><br><img src="vae_samples/MNIST_VAE_latent8_random.png" width="180"></td>
+<td><strong>latent 32</strong><br><img src="vae_samples/MNIST_VAE_latent32_random.png" width="180"></td>
+</tr>
+</table>
 
 #### FashionMNIST
 
-**FashionMNIST_VAE_latent16**:
-
-![FashionMNIST_VAE_latent16 Random Samples](vae_samples/FashionMNIST_VAE_latent16_random.png)
-
-**FashionMNIST_VAE_latent8**:
-
-![FashionMNIST_VAE_latent8 Random Samples](vae_samples/FashionMNIST_VAE_latent8_random.png)
-
-**FashionMNIST_VAE_latent32**:
-
-![FashionMNIST_VAE_latent32 Random Samples](vae_samples/FashionMNIST_VAE_latent32_random.png)
+<table>
+<tr>
+<td><strong>latent 16</strong><br><img src="vae_samples/FashionMNIST_VAE_latent16_random.png" width="180"></td>
+<td><strong>latent 8</strong><br><img src="vae_samples/FashionMNIST_VAE_latent8_random.png" width="180"></td>
+<td><strong>latent 32</strong><br><img src="vae_samples/FashionMNIST_VAE_latent32_random.png" width="180"></td>
+</tr>
+</table>
 
 ### VAE Latent Interpolations
 
